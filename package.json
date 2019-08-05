@@ -1,0 +1,13 @@
+{
+  "name": "prog-aula-scracth-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "markdownlint": "^0.15.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-scss": "^3.9.2"
+  }
+}

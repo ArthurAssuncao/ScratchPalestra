@@ -1,0 +1,37 @@
+{
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "html.suggest.html5": true,
+  "html.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.options": {
+    "configFile": ".eslintrc"
+  },
+  "markdownlint.ignore": [
+    "node_modules",
+    "build"
+  ],
+  "markdownlint.run": "onSave",
+  "workbench.colorCustomizations": {
+    "tab.unfocusedActiveBorder": "#fff0"
+  },
+  "window.title": "${appName} ${separator} ${rootName} : ${activeFolderShort}${separator}${activeEditorShort}",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.letterSpacing": 0.2,
+  "editor.lineHeight": 20,
+  "editor.renderWhitespace": "none"
+}

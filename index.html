@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="Arthur Assuncao" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Programação - Introdução ao Scratch</title>
+  <link href="bower_components/reveal.js/css/reset.css" rel="stylesheet" />
+  <link href="bower_components/reveal.js/css/reveal.css" rel="stylesheet" />
+  <link href="bower_components/reveal.js/css/theme/beige.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <img src="assets/img/logo-ifsudestemg.png" class="logo logo-left" />
+  <img src="assets/img/Scratch_Logo.svg" class="logo logo-right" />
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>
+          Introdução ao Scratch
+        </h1>
+      </section>
+
+      <section>
+        <h2>Nestas aulas você aprenderá</h2>
+        <ol class='ol-aula'>
+          <li><a href='#conceitos-basicos'>Conceitos Básicos</a></li>
+          <li><a href='#colisao-desafios'>Exemplos com colisão de objetos e desafios</a></li>
+          <li><a href='#logica-programacao'>Lógica de programação</a></li>
+          <li><a href='#make-flappy-bird'>Desenvolvimento do Flappy Bird</a></li>
+        </ol>
+      </section>
+
+      <section id='conceitos-basicos'>
+        <h1>
+          Introdução ao Scratch
+        </h1>
+        <h3>Parte 1</h3>
+        <h3>Conceitos Básicos</h3>
+      </section>
+
+      <section>
+        <h2>O que é Scratch</h2>
+        <section>
+          <ul>
+            <li>Scratch é uma <strong>linguagem de programação visual</strong> desenvolvida pelo MIT.</li>
+            <li>Seus objetivos são:</li>
+            <ul>
+              <li>Ser uma linguagem visual com uso de blocos gráficos</li>
+              <li>Tornar o aprendizado de programação mais fácil</li>
+              <li>Tornar o aprendizado mais divertido e interessante</li>
+            </ul>
+          </ul>
+        </section>
+        <section>
+          <h3>Podemos usar o Scratch em diversas tarefas, como criar:</h3>
+          <ul>
+            <li>Seu próprio jogo</li>
+            <li>Uma história animada</li>
+            <li>Um tutorial</li>
+            <li>Uma simulação científica</li>
+          </ul>
+        </section>
+        <section>
+          Não sou mais criança, por que aprender Scratch???
+        </section>
+      </section>
+
+      <section>
+        <h3>Vamos começar!</h3>
+        <section>
+          <h3>Acesso ou <em>download</em></h3>
+          <ul>
+            <li><a href='http://scratch.mit.edu'>http://scratch.mit.edu</a></li>
+          </ul>
+        </section>
+        <section>
+          <img src='assets/img/scratch-screen.png' height='500px' />
+          <!-- <span class='font-normal'>Figura 1. Tela do scratch com seus conceitos principais. Fonte: Professor Wesley H. Maciel</span> -->
+        </section>
+        <section>
+          <h3>Primeiro movimento no Scratch</h3>
+          <ul class='font-normal'>
+            <li>Vamos fazer o Gato (<em>sprite</em>) se movimentar na tela (palco ou <em>stage</em>)</li>
+            <li>Na categoria Movimento: arraste o botão <img src='assets/img/command-mova.png' class='img-inline' />
+              para a área de comandos
+              (scripts)</li>
+            <li>Mantenha o valor 10 no comando Mova</li>
+            <li>Teste clicando duas vezes sobre o comando</li>
+            <li>Teste com outros valores no comando Mova</li>
+          </ul>
+        </section>
+        <section>
+          <img src='assets/img/cat-walk.gif'>
+        </section>
+        <section>
+          <h3>Palco (<em>Stage</em>)</h3>
+          <ul class='font-normal'>
+            <li>O palco/tela (stage) é o local onde os personagens (<em>sprites</em>) se movimentam</li>
+            <li>Este palco é como um plano cartesiano com coordenadas x, y</li>
+            <li>Tem 480 pontos no eixo X e 360 no eixo Y</li>
+            <img src='assets/img/stage.png' />
+          </ul>
+        </section>
+        <section>
+          <h3>Exercício</h3>
+          <ul>
+            <li>Arraste o Gato pela área do palco e observe a posição X e Y indicada abaixo</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Lista de Sprites (<em>Sprite List</em>)</h3>
+          <ul class='font-normal'>
+            <li>Exibe os nomes e as miniaturas (<em>thumbnails</em>) dos personagens (<em>sprites</em>)</li>
+          </ul>
+          <img src='assets/img/sprite-list.gif' />
+        </section>
+
+        <section>
+          <h3>Conjunto de blocos</h3>
+          <img src='assets/img/categorias-all.png' />
+        </section>
+      </section>
+
+      <section>
+        <h3>Mãos a massa</h3>
+        <section>
+          <ul class='font-normal'>
+            <li>Vá no projeto Esconde-Esconde: <a
+                href='http://scratch.mit.edu/projects/24155933'>http://scratch.mit.edu/projects/24155933</a></li>
+            <li>Selecione "Ver interior"</li>
+            <li>Analise o código e o jogo, focando nas coordenadas</li>
+          </ul>
+          <img src='assets/img/esconde-esconde.png' height="400px" />
+        </section>
+        <section>
+          <h4>Rotação</h4>
+          <!-- <ul class='font-normal'>
+            <li>Permite a rotação</li>
+            <li>
+              Deslocamento (relativo)
+              <code>gire (para direita) 15 graus</code>
+              <code>gire (para esquerda) 15 graus</code>
+            </li>
+            <li>
+              Direcionamento (absoluto)
+              <code>aponte para a direção 90 (direita) graus</code>
+            </li>
+          </!-->
+          <img src='assets/img/rotation.png' />
+        </section>
+      </section>
+
+      <section>
+        <h2>Exercícios práticos</h2>
+        <section>
+          <ul class='font-normal'>
+            <li>Abra um novo arquivo</li>
+            <li>Clique na categoria Movimento dos blocos de Scripts</li>
+            <li>Selecione o bloco mova 10 passos com o valor 100 e arraste para a área de edição de Scripts</li>
+            <li>Clique na categoria Eventos e arraste o bloco mostrado para o script</li>
+            <li>Clique na bandeira verde para testar</li>
+            <li>Selecione o comando Falar e coloque uma mensagem</li>
+            <li>Selecione o bloco mova 10 passos com o valor -100 e arraste para a área de edição de Scripts</li>
+            <li>Coloque mais uma fala</li>
+            <li>Adicione o comando Sempre para que fique em <em>loop</em> infinito</li>
+          </ul>
+        </section>
+        <section>
+          <ul class='font-normal'>
+            <li>Com o exercício anterior vamos iniciar com uma tecla em vez da bandeira verde</li>
+            <li>Vá em <em>script</em> depois Eventos</li>
+            <li>Adicione o comando Quando a tecla 'espaço' for pressionada no lugar do comando da bandeira</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Animação</h3>
+          <ul class='font-normal'>
+            <li>Quando criamos um novo projeto o único ator (<em>sprite</em>) é o do Gato, mas podemos usar outro</li>
+            <li>Escolha um novo ator, use o Anina Hip-Hop</li>
+            <li>Delete o Gato da lista de atores</li>
+            <li>Faça uma animação com o ator</li>
+            <li>Adicione diferentes posições ao ator para ter noção de animação</li>
+            <li>Coloque um comando Espere 0.3 seg para que as posições não mudem muito rápido</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id='colisao-desafios'>
+        <h1>
+          Introdução ao Scratch
+        </h1>
+        <h3>Parte 2</h3>
+        <h3>Colisão e Desafios</h3>
+      </section>
+      <section>
+        <h3>Vamos aprender a colidir e resolver desafios</h3>
+        <section>
+          <h4>Colisão de uma bola</h4>
+          <ul class='font-normal'>
+            <li>Faça a bola se movimentar em uma direção</li>
+            <li>Faça a bola voltar caso colida com a borda</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Colisão de uma bola</h4>
+          <ul class='font-normal'>
+            <li>Adicione um ator em um ponto que a bola colida com ele</li>
+            <li>Caso a bola colida com o Ator ela deve voltar</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Colisão de uma bola</h4>
+          <ul class='font-normal'>
+            <li>Adicione um outro ator em um ponto contrário à direção da bola</li>
+            <li>A bola irá voltar caso colida com o primeiro ator</li>
+            <li>Quando ela voltar, irá colidir com o segundo ator</li>
+            <li>Faça a bola mudar de direção novamente quando tocar no segundo ator</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Desafio 1</h4>
+          <ul class='font-normal'>
+            <li>Faça a bola ir em todas direções possíveis quando tocar em algum ator, até na diagonal</li>
+            <li>Pode escolher a direção de forma aleatória ou não</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Desafio 2</h4>
+          <img src='assets/img/desafio-02.png'>
+        </section>
+        <section>
+          <h4>Desafio 3</h4>
+          <img src='assets/img/desafio-03.png'>
+        </section>
+        <!-- <section>
+          <h4>Desafio 4</h4>
+          <img src='assets/img/desafio-05.png'>
+        </section> -->
+        <section>
+          <h4>Desafio 4</h4>
+          <ul>
+            <li>Crie um jogo de ping-pong</li>
+            <li>Crie uma raquete que será um retangulo</li>
+            <li>Crie uma bola</li>
+            <li>Crie uma linha que será o piso que ocupará todo eixo x</li>
+            <li>Implemente pontuação ao jogo</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id='logica-programacao'>
+        <h1>
+          Introdução ao Scratch
+        </h1>
+        <h3>Parte 3</h3>
+        <h3>Lógica de Programação</h3>
+      </section>
+      <section>
+        <h2>Vamos aprender mais de lógica de programação em Scratch</h2>
+      </section>
+      <section>
+        <h3>Variáveis</h3>
+        <section>
+          Região de memória que armazena algum valor
+          <ul>
+            <li>Texto</li>
+            <li>Número</li>
+            <li>etc</li>
+          </ul>
+        </section>
+        <section>
+          Podemos criar variáveis usando a categoria Variáveis
+        </section>
+      </section>
+
+      <section>
+        <h3>Operadores Lógicos</h3>
+        <section>
+          <ul class='font-normal'>
+            <li>Os valores existentes no Scratch bem como as variáveis criadas podem ser comparadas com outros valores
+            </li>
+            <li>Ex.: Comparar se a posição do ator chegou no centro do palco, posição x == 0 e y == 0</li>
+            <li>Existem três operadores no Scratch: Menor (<), Igual (=) ou Maior (>)</li>
+            <li>Ex.: 1 > 2 resulta em falso</li>
+            <li>Ex.: 1 < 2 resulta em verdadeiro</li> <li>Ex.: 1 = 2 resulta em falso</li>
+            <li>Ex.: 0 > 2 resulta em falso</li>
+            <li>Para usar basta acessar a categoria Operadores</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h3>Operadores Relacionais</h3>
+        <section>
+          <ul class='font-normal'>
+            <li>Outra forma de comparação pode ser feita com os operadores relacionais
+            </li>
+            <li>Ex.: Tenho um computador <strong>e</strong> um celular</li>
+            <li>A frase acima significa que tenhos os dois aparelhos</li>
+            <li>Ex.: Tenho um computador <strong>ou</strong> um celular</li>
+            <li>A frase acima significa que possuo apenas um dos aparelhos</li>
+            <li>Ex.: <strong>Não</strong> tenho um celular</li>
+            <li>A frase acima significa que não possuo celular</li>
+            <li>No Scracth, temos três operadores relacionais: E, Ou e Não</li>
+            <li>Estes operadores podem ser acessados na categoria Operadores</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h3>Condicionais</h3>
+        <section>
+          <h3>Comando SE</h3>
+          <ul>
+            <li>Para criação de jogos e animações, é importante saber usar as condições</li>
+            <li>Vamos fazer uma bola bater na cabeça do Gato e aumentando em 1 a cada batida</li>
+            SE tocar no Gato
+            aumentar pontos
+          </ul>
+        </section>
+        <section>
+          <h3>Comando SE e SENÃO</h3>
+          <ul>
+            <li>Vamos fazer uma bola ir na direção do Gol se for o ator deve dizer Gol, senão deve dizer Errrrou</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h3>Repetição</h3>
+        <section>
+          <h3>Sempre</h3>
+          <ul>
+            <li>Vamos criar um ator que toque um tambor o tempo todo e espere por 0.2 segundos</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Sempre SE</h3>
+          <ul>
+            <li>Vamos fazer um ator tocar no tambor sempre que apertar a tecla espaço</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Repita</h3>
+          <ul>
+            <li>Vamos fazer um ator contar até 10</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Repita até</h3>
+          <ul>
+            <li>Vamos fazer um ator contar números até que a tecla Espaço seja pressionada</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h3>Outros comandos</h3>
+        <section>
+          Verifique outros comandos nas categorias abaixo:
+          <ul>
+            <li>Controle</li>
+            <li>Movimento</li>
+            <li>Operadores</li>
+            <li>Sensores</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id='make-flappy-bird'>
+        <h1>
+          Introdução ao Scratch
+        </h1>
+        <h3>Parte 4</h3>
+        <h3>Desenvolvimento do Flappy Bird</h3>
+        <h4>Esta atividade valerá 5 pontos se concluída com sucesso</h4>
+      </section>
+      <section>
+        <h2>Vamos montar o jogo Flappy Bird</h2>
+        <ul>
+          <li>Baixe os arquivos para o tutorial abaixo
+            <a href='assets/files/Artes_Sons_Jogo_Flappy_Bird.zip'>Artes e Sons do Jogo Flappy Bird</a>
+          </li>
+          <li>Execute o seguinte tutorial
+            <a href='assets/pdf/Flappy_Bird_-_Tutorial_Scratch_Brasil.pdf'>Flappy Bird - Tutorial do jogo</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Trabalho Prático 01 - (20 pontos)</h2>
+        <h3>Criar um jogo em Scratch</h3>
+        <ul>
+          <li>O tema é livre</li>
+          <li>Não pode ser um projeto pronto retirado de algum site na internet</li>
+          <li>Deve ser inteiramente feito pelo aluno</li>
+          <li>As imagens e sons utilizados podem ser obtidos da internet</li>
+          <li>A entrega deve ser feita por e-mail até o dia 08/09/2019</li>
+          <li>No e-mail deve haver ao menos dois arquivos: a documentação do jogo e o arquivo do jogo</li>
+          <li><a href='assets/files/Modelo_Documentacao_jogo.docx'>Modelo de Documentação de jogo</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Referências</h2>
+        <ul class='font-normal'>
+          <li>Conteúdos do site <a href='www.scratchbrasil.net.br'>Scratch Brasil</a></li>
+          <li>Tutorial Scratch – Conceitos básicos (http://www.nied.unicamp.br/xounicamp)</li>
+          <li>Slides do Professor Wesley Henrique Maciel do IF Sudeste MG Santos Dumont</li>
+          <li>Majed Marji. Aprenda a Programar com Scratch: uma introdução visual À programação com jogos, arte, ciência
+            e matemática. Novatec. 2014.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="bower_components/reveal.js/js/reveal.js"></script>
+  <script type="text/javascript" src="bower_components/reveal.js/plugin/markdown/marked.js"></script>
+  <script type="text/javascript" src="bower_components/reveal.js/plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize();
+    String.prototype.replaceAll = function (search, replacement) {
+      var target = this;
+      return target.split(search).join(replacement);
+    };
+    let email = document.getElementById('email');
+    email.innerHTML = email.innerHTML.replaceAll('[ponto]', '.').replaceAll('[arroba]', '@');
+  </script>
+</body>
+
+</html>
