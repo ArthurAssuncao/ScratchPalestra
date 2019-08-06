@@ -29,7 +29,7 @@
         <h2>Nestas aulas você aprenderá</h2>
         <ol class='ol-aula'>
           <li><a href='#conceitos-basicos'>Conceitos Básicos</a></li>
-          <li><a href='#colisao-desafios'>Exemplos com colisão de objetos e desafios</a></li>
+          <li><a href='#colisao-desafios'>Exercícios com colisão de objetos</a></li>
           <li><a href='#logica-programacao'>Lógica de programação</a></li>
           <li><a href='#make-flappy-bird'>Desenvolvimento do Flappy Bird</a></li>
         </ol>
@@ -159,25 +159,29 @@
       <section>
         <h2>Exercícios práticos</h2>
         <section>
-          <ul class='font-normal'>
-            <li>Abra um novo arquivo</li>
-            <li>Clique na categoria Movimento dos blocos de Scripts</li>
-            <li>Selecione o bloco mova 10 passos com o valor 100 e arraste para a área de edição de Scripts</li>
-            <li>Clique na categoria Eventos e arraste o bloco mostrado para o script</li>
+          <ul class='font-small'>
+            <li>Abra um Novo arquivo</li>
+            <li>Na categoria Movimento, adicione ao roteiro o comando <img src='assets/img/command-mova.png'
+                class='img-inline' /> com o valor 100</li>
+            <li>Na categoria Eventos, adicione o comando <img src='assets/img/command-start.png' class='img-inline' />
+              acima do primeiro comando</li>
             <li>Clique na bandeira verde para testar</li>
-            <li>Na categoria Aparência, selecione o comando Diga Olá por 2 segundos e coloque uma mensagem</li>
-            <li>Na categoria Movimento use o comando aponte para direção -90</li>
-            <li>Selecione o bloco mova 10 passos com o valor 100 e arraste para a área de edição de Scripts</li>
-            <li>Coloque mais uma fala</li>
-            <li>Adicione o comando Sempre para que fique em <em>loop</em> infinito</li>
+            <li>Na categoria Aparência, adicione o comando <img src='assets/img/command-diga-2-segundos.png'
+                class='img-inline' /> ao roteiro</li>
+            <li>Na categoria Movimento, use o comando <img src='assets/img/command-aponte-90.png' class='img-inline' />
+              com o valor -90</li>
+            <li>Para corrigir o problema do ator ficar de cabeça para baixo, use o comando <img
+                src='assets/img/command-defina-estilo-rotacao.png' class='img-inline' /></li>
+            <li>Use mais um comando <img src='assets/img/command-mova.png' class='img-inline' /></li>
+            <li>Coloque mais uma fala, agora com a mensagem "Voltei!"</li>
+            <li>Em Movimento, coloque o comando <img src='assets/img/command-aponte-90.png' class='img-inline' /></li>
+            <li>Adicione o comando <img src='assets/img/command-sempre.png' class='img-inline' /> em volta dos comandos
+              para que fique em <em>loop</em> infinito</li>
           </ul>
         </section>
         <section>
-          <ul class='font-normal'>
-            <li>Com o exercício anterior vamos iniciar com uma tecla em vez da bandeira verde</li>
-            <li>Vá em <em>script</em> depois Eventos</li>
-            <li>Adicione o comando Quando a tecla 'espaço' for pressionada no lugar do comando da bandeira</li>
-          </ul>
+          <h4>Resposta do exercício anterior</h4>
+          <img src='assets/img/exercicio-ola-voltei.gif' />
         </section>
         <section>
           <h3>Animação</h3>
@@ -185,10 +189,15 @@
             <li>Quando criamos um novo projeto o único ator (<em>sprite</em>) é o do Gato, mas podemos usar outro</li>
             <li>Escolha um novo ator, use o Anina Hip-Hop</li>
             <li>Delete o Gato da lista de atores</li>
-            <li>Faça uma animação com o ator</li>
-            <li>Adicione diferentes posições ao ator para ter noção de animação</li>
-            <li>Coloque um comando Espere 0.3 seg para que as posições não mudem muito rápido</li>
+            <li>Faça uma animação com o ator usando o comando <img src='assets/img/command-proxima-fantasia.png'
+                class='img-inline' /></li>
+            <li>Coloque um comando <img src='assets/img/command-espere-segundos.png' class='img-inline' /> para que as
+              fantasias não mudem muito rápido</li>
           </ul>
+        </section>
+        <section>
+          <h4>Resposta do exercício anterior</h4>
+          <img src='assets/img/exercicio-anina-hip-hop.gif' />
         </section>
       </section>
 
@@ -197,15 +206,37 @@
           Introdução ao Scratch
         </h1>
         <h3>Parte 2</h3>
-        <h3>Colisão e Desafios</h3>
+        <h3>Colisão</h3>
       </section>
       <section>
         <h3>Vamos aprender a colidir e resolver desafios</h3>
+        <section>
+          <h4>Bola seguindo o mouse</h4>
+          <ul class='font-normal'>
+            <li>Faça a bola seguir o cursor do mouse infinitamente</li>
+            <li>Use o comando <img src='assets/img/command-vapara-cursor-mouse.png' class='img-inline' /></li>
+            <img src='assets/img/exercicio-seguir-bola-sem-solucao.gif' />
+          </ul>
+        </section>
+        <section>
+          <h4>Mirando com o mouse</h4>
+          <ul class='font-normal'>
+            <li>Mude o ator para o Magic Ward</li>
+            <li>Vá na aba Fantasias e apague os raios amarelos</li>
+            <li>Use o comando <img src='assets/img/command-aponte-cursor-mouse.png' class='img-inline' /> para que ele
+              aponte para o mouse sempre</li>
+            <li>Use o comando <img src='assets/img/command-sempre.png' class='img-inline' /> para que sempre aponte</li>
+            <li>Na categoria Movimento, marque os botões Posição x, Posição Y e Direção</li>
+            <img src='assets/img/exercicio-taco-sem-solucao.gif' />
+          </ul>
+        </section>
         <section>
           <h4>Colisão de uma bola</h4>
           <ul class='font-normal'>
             <li>Faça a bola se movimentar em uma direção</li>
             <li>Faça a bola voltar caso colida com a borda</li>
+            <li>Use o comando <img src='assets/img/command-se-tocar-borda-volte.png' class='img-inline' /></li>
+            <img src='assets/img/exercicio-bola-ir-voltar-sem-solucao.gif' />
           </ul>
         </section>
         <section>
@@ -213,38 +244,32 @@
           <ul class='font-normal'>
             <li>Adicione um ator em um ponto que a bola colida com ele</li>
             <li>Caso a bola colida com o Ator ela deve voltar</li>
+            <li>Use os comandos <img src='assets/img/command-se-entao.png' class='img-inline' /> e <img
+                src='assets/img/command-tocando-em.png' class='img-inline' /></li>
+            <img src='assets/img/exercicio-bola-ir-voltar-ator-sem-solucao.gif' />
           </ul>
         </section>
         <section>
-          <h4>Colisão de uma bola</h4>
+          <h4>Apontar para o lado da tecla pressionada</h4>
           <ul class='font-normal'>
-            <li>Adicione um outro ator em um ponto contrário à direção da bola</li>
-            <li>A bola irá voltar caso colida com o primeiro ator</li>
-            <li>Quando ela voltar, irá colidir com o segundo ator</li>
-            <li>Faça a bola mudar de direção novamente quando tocar no segundo ator</li>
+            <li>Configure as setas do teclado para movimentar o gato (Gato 2) se virar para o lado da seta teclada</li>
+            <li>Use um comando <img src='assets/img/command-quando-tecla-for-pressionada.png' /> para cada tecla</li>
+            <img src='assets/img/exercicio-gato-setas.gif' />
           </ul>
         </section>
         <section>
-          <h4>Desafio 1</h4>
-          <ul class='font-normal'>
-            <li>Faça a bola ir em todas direções possíveis quando tocar em algum ator, até na diagonal</li>
-            <li>Pode escolher a direção de forma aleatória ou não</li>
+          <h4>Colhendo maça</h4>
+          <ul>
+            <li>Crie o jogo da colheita de maça</li>
+            <li>Use um <em>sprite</em> como o Bowl e a maça, Apple</li>
+            <li>Faça a maça cair aleatóriamente</li>
+            <li>Faça a tigela (Bowl) movimentar junto com o mouse</li>
+            <li>Desafio: Adicione pontuação</li>
+            <img src='assets/img/exercicio-maca-sem-solucao.gif' />
           </ul>
         </section>
         <section>
-          <h4>Desafio 2</h4>
-          <img src='assets/img/desafio-02.png'>
-        </section>
-        <section>
-          <h4>Desafio 3</h4>
-          <img src='assets/img/desafio-03.png'>
-        </section>
-        <!-- <section>
-          <h4>Desafio 4</h4>
-          <img src='assets/img/desafio-05.png'>
-        </section> -->
-        <section>
-          <h4>Desafio 4</h4>
+          <h4>Ping pong</h4>
           <ul>
             <li>Crie um jogo de ping-pong</li>
             <li>Crie uma raquete que será um retangulo</li>
