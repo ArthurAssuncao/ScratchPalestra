@@ -58,10 +58,13 @@ em {
 .no-bullet {
   list-style: none;
 }
+.ol-aula li {
+
+}
 .ol-aula li:before {
   content: 'Aula ';
-  left: -10px;
-  position: absolute;
+  left: -130px;
+  position: relative;
 }
 .img-inline {
   border: 0px !important;
