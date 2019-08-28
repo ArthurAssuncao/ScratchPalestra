@@ -58,13 +58,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 96.9vh;
+    height: 100vh;
     margin: 0 auto;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     text-align: center;
     overflow-wrap: break-word;
     font-size: 2rem;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
   .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
@@ -75,7 +75,6 @@ body {
 
   .reveal h1 {
     font-size: 3.5rem;
-    margin-top: 20vh;
   }
 
   .reveal h2 {
@@ -113,8 +112,11 @@ body {
   }
 
   .reveal section {
-    font-size: 2.3rem;
-    top: 8vh !important;
+    font-size: 2.1rem;
+  }
+
+  .reveal section section.present {
+    margin-top: 0vh;
   }
 
   .reveal section img {
@@ -145,8 +147,8 @@ body {
 
   .reveal .slides {
     width: 100vw !important;
-    height: 97vh !important;
-    /* top: 5vh; */
+    height: calc(100vh - 6vh - 20px - 5vh) !important;
+    margin-top: calc(6vh + 20px);
     bottom: 0vh;
     display: flex;
     flex-direction: column;
@@ -169,6 +171,7 @@ body {
     margin: 0 auto;
     left: 30px;
     right: 30px;
+    padding-top: 20px;
   }
 
   .reveal .header:first-child {
@@ -198,16 +201,22 @@ body {
     height: auto;
     margin: 0 auto;
   }
+
   .reveal .footer {
     position: absolute;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     font-size: 1.3rem;
     text-align: center;
-    bottom: -5vh;
+    bottom: 0vh;
     width: calc(100vw - 30px);
-    left: 30px;
+    padding-left: 30px;
     z-index: 1;
+    line-height: 6vh;
+  }
+
+  .reveal .footer .credits {
+    bottom: 0px;
   }
 
   .reveal .font-small {
@@ -260,7 +269,10 @@ body {
 
   .reveal section {
     font-size: 2.5rem;
-    top: 8vh !important;
+  }
+
+  .reveal section section.present {
+    margin-top: 5vh;
   }
 
   .reveal section img {
@@ -281,6 +293,10 @@ body {
     font-size: 2rem;
   }
 
+  .reveal .footer .credits {
+    margin-top: 30px;
+  }
+
   .reveal .font-small {
     font-size: 2rem;
   }
@@ -295,6 +311,11 @@ body {
   @media (orientation: landscape) {
     .reveal .two-elements {
       flex-direction: row;
+      justify-content: center;
+    }
+
+    .reveal .two-elements img {
+      margin: 0;
     }
   }
 
@@ -331,9 +352,13 @@ body {
     height: 8vh;
   }
 
+  .reveal .slides {
+    height: calc(100vh - 8vh - 20px - 5vh) !important;
+    margin-top: calc(8vh + 20px);
+  }
+
   .reveal section {
     font-size: 4rem;
-    top: 10vh !important;
   }
 
   .reveal section img {
@@ -393,6 +418,11 @@ body {
     height: 10vh;
   }
 
+  .reveal .slides {
+    height: calc(100vh - 10vh - 20px - 8vh) !important;
+    margin-top: calc(10vh + 20px);
+  }
+
   .reveal section {
     font-size: 4.5rem;
   }
@@ -409,6 +439,7 @@ body {
 
   .reveal .footer {
     font-size: 3.5rem;
+    height: 8vh;
   }
 
   .reveal .font-small {
@@ -460,9 +491,13 @@ body {
     height: 11vh;
   }
 
+  .reveal .slides {
+    height: calc(100vh - 10vh - 20px - 11vh) !important;
+    margin-top: calc(10vh + 20px);
+  }
+
   .reveal section {
     font-size: 3.5rem;
-    top: 7vh !important;
   }
 
   .reveal section h2 {
@@ -472,6 +507,7 @@ body {
 
   .reveal .footer {
     font-size: 2.5rem;
+    height: 11vh;
   }
 
   .reveal .font-small {
@@ -480,5 +516,10 @@ body {
 
   .reveal .two-elements {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .reveal .two-elements img {
+    margin: 0;
   }
 }

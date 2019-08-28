@@ -1,10 +1,11 @@
 
-.reveal {
+.reveal .footer {
   background: url("../assets/img/bg.png");
   background-position: bottom;
   background-size: 100vw;
   background-repeat: no-repeat;
   margin: 0;
+  color: #333;
 }
 
 .logo {
@@ -40,6 +41,3 @@
   margin-right: auto !important;
 }
 
-.footer {
-  color: #333;
-}
