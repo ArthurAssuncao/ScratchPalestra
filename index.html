@@ -11,13 +11,18 @@
   <link href="bower_components/reveal.js/css/reset.css" rel="stylesheet" />
   <link href="bower_components/reveal.js/css/reveal.css" rel="stylesheet" />
   <link href="bower_components/reveal.js/css/theme/beige.css" rel="stylesheet" />
+  <link href="css/style-responsivo.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+
 </head>
 
 <body>
-  <img src="assets/img/logo-ifsudestemg.png" class="logo logo-left" />
-  <img src="assets/img/Scratch_Logo.svg" class="logo logo-right" />
   <div class="reveal">
+    <div class="header">
+      <img src="assets/img/logo-ifsudestemg.png" class="logo logo-left" />
+      <span class='middle-trick'></span>
+      <img src="assets/img/Scratch_Logo.svg" class="logo logo-right" />
+    </div>
     <div class="slides">
       <section>
         <h1>
@@ -84,7 +89,7 @@
         </section>
         <section>
           <h3>Primeiro movimento no Scratch</h3>
-          <ul class='font-normal'>
+          <ul>
             <li>Vamos fazer o Gato (<em>sprite</em>) se movimentar na tela (palco ou <em>stage</em>)</li>
             <li>Na categoria Movimento: arraste o botão <img src='assets/img/command-mova.png' class='img-inline' />
               para a área de comandos
@@ -99,11 +104,11 @@
         </section>
         <section>
           <h3>Palco (<em>Stage</em>)</h3>
-          <ul class='font-normal'>
+          <ul>
             <li>O palco/tela (stage) é o local onde os personagens (<em>sprites</em>) se movimentam</li>
             <li>Este palco é como um plano cartesiano com coordenadas x, y</li>
             <li>Tem 480 pontos no eixo X e 360 no eixo Y</li>
-            <img src='assets/img/stage.png' class='center' />
+            <img src='assets/img/stage.png' />
           </ul>
         </section>
         <section>
@@ -115,10 +120,10 @@
 
         <section>
           <h3>Lista de Sprites (<em>Sprite List</em>)</h3>
-          <ul class='font-normal'>
+          <ul>
             <li>Exibe os nomes e as miniaturas (<em>thumbnails</em>) dos personagens (<em>sprites</em>)</li>
           </ul>
-          <img src='assets/img/sprite-list.gif' class='center' />
+          <img src='assets/img/sprite-list.gif' />
         </section>
 
         <section>
@@ -130,7 +135,7 @@
       <section>
         <h3>Mãos a massa</h3>
         <section>
-          <ul class='font-normal'>
+          <ul>
             <li>Vá no projeto Esconde-Esconde: <a
                 href='http://scratch.mit.edu/projects/24155933'>http://scratch.mit.edu/projects/24155933</a></li>
             <li>Selecione "Ver interior"</li>
@@ -181,11 +186,11 @@
         </section>
         <section>
           <h4>Resposta do exercício anterior</h4>
-          <img src='assets/img/exercicio-ola-voltei.gif' class='center' />
+          <img src='assets/img/exercicio-ola-voltei.gif' />
         </section>
         <section>
           <h3>Animação</h3>
-          <ul class='font-normal'>
+          <ul>
             <li>Quando criamos um novo projeto o único ator (<em>sprite</em>) é o do Gato, mas podemos usar outro</li>
             <li>Escolha um novo ator, use o Anina Hip-Hop</li>
             <li>Delete o Gato da lista de atores</li>
@@ -197,7 +202,7 @@
         </section>
         <section>
           <h4>Resposta do exercício anterior</h4>
-          <img src='assets/img/exercicio-anina-hip-hop.gif' class='center' />
+          <img src='assets/img/exercicio-anina-hip-hop.gif' />
         </section>
       </section>
 
@@ -212,64 +217,64 @@
         <h3>Vamos aprender sobre interação com usuário e a colidir</h3>
         <section>
           <h4>Bola seguindo o mouse</h4>
-          <ul class='font-normal'>
+          <ul>
             <li>Faça a bola seguir o cursor do mouse infinitamente</li>
             <li>Use o comando <img src='assets/img/command-vapara-cursor-mouse.png' class='img-inline' /></li>
-            <img src='assets/img/exercicio-seguir-bola-sem-solucao.gif' class='center' />
+            <img src='assets/img/exercicio-seguir-bola-sem-solucao.gif' />
           </ul>
         </section>
         <section>
           <h4>Mirando com o mouse</h4>
-          <ul class='font-normal'>
+          <ul>
             <li>Mude o ator para o Magic Ward</li>
             <li>Vá na aba Fantasias e apague os raios amarelos</li>
             <li>Use o comando <img src='assets/img/command-aponte-cursor-mouse.png' class='img-inline' /> para que ele
               aponte para o mouse sempre</li>
             <li>Use o comando <img src='assets/img/command-sempre.png' class='img-inline' /> para que sempre aponte</li>
             <li>Na categoria Movimento, marque os botões Posição x, Posição Y e Direção</li>
-            <img src='assets/img/exercicio-taco-sem-solucao.gif' class='center' />
+            <img src='assets/img/exercicio-taco-sem-solucao.gif' />
           </ul>
         </section>
         <section>
           <h4>Colisão de uma bola</h4>
-          <ul class='font-normal'>
+          <ul>
             <li>Faça a bola se movimentar em uma direção</li>
             <li>Faça a bola voltar caso colida com a borda</li>
             <li>Use o comando <img src='assets/img/command-se-tocar-borda-volte.png' class='img-inline' /></li>
-            <img src='assets/img/exercicio-bola-ir-voltar-sem-solucao.gif' class='center' />
+            <img src='assets/img/exercicio-bola-ir-voltar-sem-solucao.gif' />
           </ul>
         </section>
         <section>
           <h4>Colisão de uma bola</h4>
-          <ul class='font-normal'>
+          <ul>
             <li>Adicione um ator em um ponto que a bola colida com ele</li>
             <li>Caso a bola colida com o Ator ela deve voltar</li>
             <li>Use os comandos <img src='assets/img/command-se-entao.png' class='img-inline' /> e <img
                 src='assets/img/command-tocando-em.png' class='img-inline' /></li>
             <li>Salve o arquivo para enviar ao professor</li>
-            <img src='assets/img/exercicio-bola-ir-voltar-ator-sem-solucao.gif' class='center' />
+            <img src='assets/img/exercicio-bola-ir-voltar-ator-sem-solucao.gif' />
           </ul>
         </section>
         <section>
           <h4>Apontar para o lado da tecla pressionada</h4>
-          <ul class='font-normal'>
+          <ul>
             <li>Configure as setas do teclado para movimentar o gato (Gato 2) se virar para o lado da seta pressionada
             </li>
             <li>Use um comando <img src='assets/img/command-quando-tecla-for-pressionada.png' class='img-inline' /> para
               cada tecla</li>
-            <img src='assets/img/exercicio-gato-setas.gif' class='center' />
+            <img src='assets/img/exercicio-gato-setas.gif' />
           </ul>
         </section>
         <section>
           <h4>Colhendo maça</h4>
-          <ul class='font-normal'>
+          <ul class='font-small'>
             <li>Crie o jogo da colheita de maça</li>
             <li>Use um <em>sprite</em> como o Bowl e a maça, Apple</li>
             <li>Faça a maça cair aleatóriamente</li>
             <li>Faça a tigela (Bowl) movimentar junto com o mouse</li>
             <li>Salve o arquivo para enviar ao professor</li>
             <li>Desafio: Adicione pontuação</li>
-            <img src='assets/img/exercicio-maca-sem-solucao-2.gif' class='center' height='300vh' />
+            <img src='assets/img/exercicio-maca-sem-solucao-2.gif' height='230vh' />
           </ul>
         </section>
       </section>
@@ -286,7 +291,7 @@
       </section>
       <section>
         <h3>Variáveis</h3>
-        <section class='font-normal'>
+        <section>
           <div>Região de memória que armazena algum valor</div>
           <ul>
             <li>Texto</li>
@@ -294,14 +299,14 @@
             <li>etc</li>
           </ul>
           <div>Podemos criar variáveis usando a categoria Variáveis</div>
-          <img src='assets/img/command-variaveis.png' class='center' />
+          <img src='assets/img/command-variaveis.png' />
         </section>
       </section>
 
       <section>
         <h3>Operadores Lógicos</h3>
         <section>
-          <ul class='font-normal'>
+          <ul class="font-small">
             <li>Os valores existentes no Scratch bem como as variáveis criadas podem ser comparadas com outros valores
             </li>
             <li>A comparação é feita nos comandos condicionais, como o <img src='assets/img/command-se-entao.png'
@@ -320,7 +325,7 @@
       <section>
         <h3>Operadores Relacionais</h3>
         <section>
-          <ul class='font-normal'>
+          <ul class='font-small'>
             <li>Outra forma de comparação pode ser feita com os operadores relacionais
             </li>
             <li>Ex.: Tenho um computador <strong>e</strong> um celular</li>
@@ -341,11 +346,11 @@
         <h3>Condicionais</h3>
         <section>
           <h3>Comando SE</h3>
-          <ul class='font-normal'>
+          <ul>
             <li>Para criação de jogos e animações, é importante saber usar as condições</li>
             <li>Vamos fazer uma bola bater na cabeça do Gato e aumentar a pontuação em 1 a cada batida</li>
           </ul>
-          <div>
+          <div class='two-elements'>
             <img src='assets/img/exercicio-bola-bater-gato-pontos-solucao.png'>
             <img src='assets/img/exercicio-bola-bater-gato-pontos.gif'>
           </div>
@@ -356,7 +361,7 @@
             <li>Vamos fazer uma bola seguir o cursor do mouse e quando chegar no Gol, o ator (bola) deve dizer Gol!!
             </li>
           </ul>
-          <div>
+          <div class='two-elements'>
             <img src='assets/img/exercicio-bola-gol-solucao.png'>
             <img src='assets/img/exercicio-bola-gol.gif'>
           </div>
@@ -388,7 +393,7 @@
           <ul>
             <li>Vamos fazer um ator contar números até 10</li>
           </ul>
-          <div>
+          <div class='two-elements'>
             <img src='assets/img/exercicio-contar-ate-10-solucao.png'>
             <img src='assets/img/exercicio-contar-ate-10.gif'>
           </div>
@@ -398,7 +403,7 @@
           <ul>
             <li>Vamos fazer um ator contar números até que a tecla Espaço seja pressionada</li>
           </ul>
-          <div>
+          <div class='two-elements'>
             <img src='assets/img/exercicio-contar-ate-espaco-solucao.png'>
             <img src='assets/img/exercicio-contar-ate-10.gif'>
           </div>
@@ -422,15 +427,17 @@
         <h3>Jogo com cenário, condições e variável</h3>
         <section>
           <h4>Ping pong</h4>
-          <ul class='font-normal'>
+          <ul>
             <li>Crie um jogo de ping-pong</li>
             <li>Crie uma raquete que será um retangulo</li>
             <li>Crie uma bola</li>
             <li>Crie uma linha que será o piso que ocupará todo eixo x</li>
             <li>Salve o arquivo para enviar ao professor</li>
             <li>Se der tempo, implemente pontuação ao jogo</li>
-            <img src='assets/img/exercicio-ping-pong.gif' class='center' height='250vh' />
           </ul>
+          <div>
+            <img src='assets/img/exercicio-ping-pong.gif' height='200vh' />
+          </div>
         </section>
       </section>
 
@@ -444,12 +451,13 @@
       <section>
         <h2>Vamos montar o jogo Flappy Bird</h2>
         <h4>Esta atividade valerá 5 pontos se concluída com sucesso</h4>
-        <ul class='font-normal'>
+        <ul>
           <li>Baixe os arquivos para o tutorial abaixo
             <a href='assets/files/Flappy-bird_-_arquivos.zip'>Artes e Sons do Jogo Flappy Bird</a>
           </li>
           <li>Execute o seguinte tutorial
-            <a href='https://medium.com/@arthurnassuncao/desenvolvendo-o-jogo-flappy-bird-no-scratch-71b03603fad1'>Flappy Bird - Tutorial do jogo</a>
+            <a href='https://medium.com/@arthurnassuncao/desenvolvendo-o-jogo-flappy-bird-no-scratch-71b03603fad1'>Flappy
+              Bird - Tutorial do jogo</a>
           </li>
         </ul>
         <div>
@@ -459,7 +467,7 @@
       <section>
         <h2>Trabalho Prático 01 - (15 pontos)</h2>
         <h3>Criar um jogo em Scratch</h3>
-        <ul class='font-normal'>
+        <ul class='font-small'>
           <li>O tema é livre</li>
           <li>Darei maior pontuação se for interessante ou tiver relação com alguma disciplina do curso ou se
             tiver relação com ensino de alguma coisa (qualquer coisa!)</li>
@@ -475,7 +483,7 @@
 
       <section>
         <h2>Referências</h2>
-        <ul class='font-normal'>
+        <ul>
           <li>Scratch Brasil. Scratch Brasil. Disponível em: &lt<a
               href='www.scratchbrasil.net.br'>http://www.scratchbrasil.net.br</a>&gt. Acesso em: 01 de agosto de 2019.
           </li>
@@ -489,14 +497,21 @@
         </ul>
       </section>
     </div>
+    <div class="footer">
+      Arthur Assuncao
+    </div>
   </div>
   <script type="text/javascript" src="bower_components/reveal.js/js/reveal.js"></script>
   <script type="text/javascript" src="bower_components/reveal.js/plugin/markdown/marked.js"></script>
   <script type="text/javascript" src="bower_components/reveal.js/plugin/markdown/markdown.js"></script>
   <script>
     Reveal.initialize({
-      width: '100%'
-    })
+      width: "100%",
+      height: "100%",
+      margin: 0,
+      minScale: 1,
+      maxScale: 1
+    });
   </script>
 </body>
 

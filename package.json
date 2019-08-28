@@ -1,10 +1,11 @@
 {
-  "name": "prog-aula-scracth-01",
+  "name": "palestra-scratch",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^6.1.0",
+    "eslint-utils": "^1.4.2",
     "markdownlint": "^0.15.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",

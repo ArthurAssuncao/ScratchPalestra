@@ -1,0 +1,452 @@
+/*
+Based on:
+https://ricostacruz.com/til/css-media-query-breakpoints
+http://javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml
+https://zellwk.com/blog/media-query-units/
+https://github.com/zellwk/mappy-breakpoints
+  Breakpoint	Purpose
+  (default)	Mobile-portrait
+  min-width: 480px	Mobile-landscape (and larger)
+  min-width: 768px	Tablet-portrait (and larger)
+  min-width: 992px	Tablet-landscape (and larger)
+  min-width: 1200px	Laptops (and langer)
+*/
+
+/*
+@custom-media --viewport-4 (min-width: 480px);
+@custom-media --viewport-7 (min-width: 768px);
+@custom-media --viewport-9 (min-width: 992px);
+@custom-media --viewport-12 (min-width: 1200px);
+@media (--viewport-4) {
+  // ...
+}
+*/
+
+/* REMEMBER
+Set font-size: 10px in HTML element
+Set font-size: 1.6em in Body */
+HTML {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  ##Device = Mobile-portrait (and larger)
+  ##Screen = B/w 0px to 479px
+*/
+@media (min-width: 0px) {
+  strong {
+    font-weight: bold;
+  }
+  em {
+    font-style: italic;
+  }
+  .no-bullet {
+    list-style: none;
+  }
+  .reveal section img, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    margin: 0;
+  }
+
+  .reveal {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 95vh;
+    margin: 0 auto;
+    margin-top: 2vh;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 2rem;
+  }
+
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
+    text-align: center;
+    top: 0px;
+  }
+
+  .reveal h1 {
+    font-size: 3.5rem;
+    margin-top: 20vh;
+  }
+
+  .reveal h2 {
+    font-size: 3rem;
+  }
+
+  .reveal h3 {
+    font-size: 2.8rem;
+  }
+
+  .reveal h4 {
+    font-size: 2.2rem;
+  }
+
+  .reveal h5 {
+    font-size: 1.8rem;
+  }
+
+  .reveal h6 {
+    font-size: 1.7rem;
+  }
+
+  .reveal ul, .reveal ol {
+    font-size: 1.7rem;
+    width: 85vw;
+    text-align: left;
+  }
+
+  .reveal ul li, .reveal ol li{
+    margin-top: 5px;
+  }
+
+  .reveal ul li:first-child, .reveal ol li:first-child {
+    margin-top: 0;
+  }
+
+  .reveal section {
+    font-size: 2rem;
+    top: 6vh !important;
+  }
+
+  .reveal section img {
+    max-width: 75vw;
+    max-height: 40vh;
+    /* object-fit: cover; */
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-width: 1px;
+  }
+
+  .reveal section img.img-inline {
+    border: 0px !important;
+    vertical-align: middle;
+    display: inline-block;
+    /* object-fit: cover; */
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    max-width: 90px;
+    max-height: 50px;
+  }
+
+  .reveal .slides {
+    width: 100vw !important;
+    height: 95vh !important;
+    /* top: 5vh; */
+    bottom: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reveal .slides section, .reveal .slides > section {
+    padding: 0px !important;
+  }
+
+  .reveal .header {
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .reveal .header:first-child {
+    align-self: flex-start;
+    position: relative;
+    float: left;
+    margin: 0px;
+  }
+
+  .reveal .header .middle-trick {
+    margin: 0 auto;
+    flex: 3;
+  }
+
+  .reveal .header:last-child {
+    align-self: flex-end;
+    position: relative;
+    float: right;
+    margin: 0px;
+  }
+
+  .reveal .header img {
+    vertical-align: middle;
+    display: inline-block;
+    /* object-fit: cover; */
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  .reveal .footer {
+    position: absolute;
+    height: 10vh;
+    display: flex;
+    font-size: 1.3rem;
+    text-align: center;
+    bottom: -5vh;
+  }
+
+  .reveal .font-small {
+    font-size: 1.3rem;
+  }
+
+  .reveal .two-elements {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobile-landscape (and larger)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 480px) {
+  .reveal h1 {
+    font-size: 4.5rem;
+  }
+
+  .reveal h2 {
+    font-size: 4rem;
+  }
+
+  .reveal h3 {
+    font-size: 3.5rem;
+  }
+
+  .reveal h4 {
+    font-size: 3rem;
+  }
+
+  .reveal h5 {
+    font-size: 2.5rem;
+  }
+
+  .reveal h6 {
+    font-size: 2rem;
+  }
+
+  .reveal ul, .reveal ol {
+    font-size: 2rem;
+    width: 85vw;
+  }
+
+  .reveal ul li, .reveal ol li{
+    margin-top: 10px;
+  }
+
+  .reveal section {
+    font-size: 2.3rem;
+    top: 6vh !important;
+  }
+
+  .reveal section img {
+    max-width: 85vw;
+    max-height: 40vh;
+  }
+
+  .reveal section img.img-inline {
+    max-width: 120px;
+    max-height: 60px;
+  }
+
+  .reveal .header {
+    height: 6vh;
+  }
+
+  .reveal .footer {
+    font-size: 1.8rem;
+  }
+
+  .reveal .font-small {
+    font-size: 1.8rem;
+  }
+}
+
+/*
+  ##Device = 	Ipad and Tablet-portrait (and larger)
+  ##Screen = B/w 768px to 991px
+*/
+@media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+  .reveal h1 {
+    font-size: 8rem;
+  }
+
+  .reveal h2 {
+    font-size: 6rem;
+  }
+
+  .reveal h3 {
+    font-size: 5rem;
+  }
+
+  .reveal h4 {
+    font-size: 4rem;
+  }
+
+  .reveal h5 {
+    font-size: 3.5rem;
+  }
+
+  .reveal h6 {
+    font-size: 3rem;
+  }
+
+  .reveal ul, .reveal ol {
+    font-size: 3rem;
+    width: 85vw;
+  }
+
+  .reveal .header {
+    height: 8vh;
+  }
+
+  .reveal section {
+    font-size: 4rem;
+    top: 10vh !important;
+  }
+
+  .reveal section img {
+    max-width: 85vw;
+    max-height: 30vh;
+  }
+
+  .reveal section img.img-inline {
+    max-width: 300px;
+    max-height: 100px;
+  }
+
+  .reveal .footer {
+    font-size: 2.5rem;
+  }
+
+  .reveal .font-small {
+    font-size: 2.5rem;
+  }
+
+  .reveal .two-elements {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*
+  ##Device = 	Ipad and Tablet-landscape (and larger)
+  ##Screen = B/w 992px to 1199px
+*/
+@media (min-width: 992px),(min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+  .reveal h1 {
+    font-size: 10rem;
+  }
+
+  .reveal h2 {
+    font-size: 8rem;
+  }
+
+  .reveal h3 {
+    font-size: 6.5rem;
+  }
+
+  .reveal h4 {
+    font-size: 5.5rem;
+  }
+
+  .reveal h5 {
+    font-size: 4.5rem;
+  }
+
+  .reveal h6 {
+    font-size: 4rem;
+  }
+
+  .reveal ul, .reveal ol {
+    font-size: 4rem;
+    width: 85vw;
+  }
+
+  .reveal .header {
+    height: 10vh;
+  }
+
+  .reveal section {
+    font-size: 4rem;
+  }
+
+  .reveal section img.img-inline {
+    max-width: 400px;
+    max-height: 150px;
+  }
+
+  .reveal .footer {
+    font-size: 3rem;
+  }
+
+  .reveal .font-small {
+    font-size: 3rem;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops (and langer)
+  ##Screen = B/w 1200px to higher resolution desktops
+*/
+
+@media (min-width: 1200px) {
+  .reveal h1 {
+    font-size: 10rem;
+  }
+
+  .reveal h2 {
+    font-size: 6rem;
+  }
+
+  .reveal h3 {
+    font-size: 5.5rem;
+  }
+
+  .reveal h4 {
+    font-size: 5rem;
+  }
+
+  .reveal h5 {
+    font-size: 4rem;
+  }
+
+  .reveal h6 {
+    font-size: 3.5rem;
+  }
+
+  .reveal ul, .reveal ol {
+    font-size: 3rem;
+    width: 85vw;
+  }
+
+  .reveal .header {
+    height: 11vh;
+  }
+
+  .reveal section {
+    font-size: 4rem;
+    top: 11vh !important;
+  }
+
+  .reveal .footer {
+    font-size: 2.5rem;
+  }
+
+  .reveal .font-small {
+    font-size: 2.5rem;
+  }
+}

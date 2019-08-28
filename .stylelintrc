@@ -8,7 +8,7 @@
     "string-quotes": "single",
     "no-duplicate-selectors": true,
     "block-no-empty": null,
-    "unit-whitelist": ["px", "rem", "vw", "vh", "s", "vmin", "vmax", "ex", "ch"],
+    "unit-whitelist": ["px", "rem", "vw", "vh", "s", "vmin", "vmax", "ex", "ch", "fr", "%"],
     "max-empty-lines": 2,
     "color-hex-case": "upper",
     "selector-max-id": 0,
