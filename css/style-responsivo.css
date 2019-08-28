@@ -57,13 +57,14 @@ body {
   .reveal {
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    height: 95vh;
+    width: 100vw;
+    height: 96.9vh;
     margin: 0 auto;
     margin-top: 2vh;
     text-align: center;
     overflow-wrap: break-word;
     font-size: 2rem;
+    padding-top: 20px;
   }
 
   .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
@@ -124,6 +125,9 @@ body {
     height: auto;
     margin: 0 auto;
     border-width: 1px;
+    border-color: antiquewhite;
+    border: 0px;
+    box-shadow: none;
   }
 
   .reveal section img.img-inline {
@@ -140,7 +144,7 @@ body {
 
   .reveal .slides {
     width: 100vw !important;
-    height: 95vh !important;
+    height: 97vh !important;
     /* top: 5vh; */
     bottom: 0vh;
     display: flex;
@@ -156,11 +160,14 @@ body {
   .reveal .header {
     position: absolute;
     top: 0;
-    width: 90vw;
+    width: calc(100vw - 30px - 30px);
     height: 6vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin: 0 auto;
+    left: 30px;
+    right: 30px;
   }
 
   .reveal .header:first-child {
@@ -197,6 +204,8 @@ body {
     font-size: 1.3rem;
     text-align: center;
     bottom: -5vh;
+    width: calc(100vw - 30px);
+    left: 30px;
   }
 
   .reveal .font-small {
@@ -386,7 +395,7 @@ body {
 
   .reveal section img.img-inline {
     max-width: 400px;
-    max-height: 150px;
+    max-height: 120px;
   }
 
   .reveal .footer {
@@ -409,23 +418,23 @@ body {
   }
 
   .reveal h2 {
-    font-size: 6rem;
-  }
-
-  .reveal h3 {
-    font-size: 5.5rem;
-  }
-
-  .reveal h4 {
     font-size: 5rem;
   }
 
-  .reveal h5 {
+  .reveal h3 {
+    font-size: 4.5rem;
+  }
+
+  .reveal h4 {
     font-size: 4rem;
   }
 
-  .reveal h6 {
+  .reveal h5 {
     font-size: 3.5rem;
+  }
+
+  .reveal h6 {
+    font-size: 3rem;
   }
 
   .reveal ul, .reveal ol {
@@ -433,13 +442,23 @@ body {
     width: 85vw;
   }
 
+  .reveal section img {
+    max-width: 85vw;
+    max-height: 45vh;
+  }
+
   .reveal .header {
     height: 11vh;
   }
 
   .reveal section {
-    font-size: 4rem;
-    top: 11vh !important;
+    font-size: 3.5rem;
+    top: 7vh !important;
+  }
+
+  .reveal section h2 {
+    width: 68vw;
+    margin: 0 auto;
   }
 
   .reveal .footer {
@@ -447,6 +466,6 @@ body {
   }
 
   .reveal .font-small {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }

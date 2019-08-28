@@ -1,6 +1,6 @@
 
 .reveal {
-  background: url("../img/bg.png");
+  background: url("../assets/img/bg.png");
   background-position: bottom;
   background-size: 100vw;
   background-repeat: no-repeat;
@@ -38,4 +38,8 @@
   display: block;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.footer {
+  color: #333;
 }
