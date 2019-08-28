@@ -154,6 +154,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .reveal .slides section, .reveal .slides > section {
@@ -269,6 +272,7 @@ body {
 
   .reveal section {
     font-size: 2.5rem;
+    top: 0vh !important;
   }
 
   .reveal section section.present {
@@ -294,7 +298,7 @@ body {
   }
 
   .reveal .footer .credits {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .reveal .font-small {
@@ -488,12 +492,12 @@ body {
   }
 
   .reveal .header {
-    height: 11vh;
+    height: 8vh;
   }
 
   .reveal .slides {
-    height: calc(100vh - 10vh - 20px - 11vh) !important;
-    margin-top: calc(10vh + 20px);
+    height: calc(100vh - 8vh - 20px - 8vh) !important;
+    margin-top: calc(8vh + 20px);
   }
 
   .reveal section {
@@ -505,9 +509,13 @@ body {
     margin: 0 auto;
   }
 
+  .reveal section section.present {
+    margin-top: 6vh !important;
+  }
+
   .reveal .footer {
-    font-size: 2.5rem;
-    height: 11vh;
+    font-size: 2rem;
+    height: 8vh;
   }
 
   .reveal .font-small {
